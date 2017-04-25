@@ -12,15 +12,17 @@ Wunder2Reminders is a tool to transfer task data from Wunderlist into iCloud Rem
 ## Installation
 
 1. Download wunder2reminders ZIP form this page.
-1. Unzip the zip file.
 
+![](images/download.png)
+
+1. Unzip the zip file.
 
 
 ## Usage
 
 ### 1. Back up Wunderlist.
 
-Back up your Wunderlist task data. You can export the backup file from 'Account Settings -> Create Backup'.
+Back up your Wunderlist task data. You can export the backup file from 'Account Settings -> Create Backup' on the Wunderlist website.
 
 [Wunderlist | Can I backup / export my data?](https://support.wunderlist.com/customer/en/portal/articles/2364564-can-i-backup-export-my-data-)
 
