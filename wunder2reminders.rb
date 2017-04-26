@@ -32,6 +32,7 @@ EOS
   task_data + "END:VTODO\n"
 end
 
+# format date string for .ics
 def format_date(date)
   date.gsub(/\.\d*Z\z/, 'Z').gsub(/[^\dTZ]/, '')
 end
