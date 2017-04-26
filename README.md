@@ -26,14 +26,14 @@ Back up your Wunderlist task data. You can export the backup file from 'Account 
 
 [Wunderlist | Can I backup / export my data?](https://support.wunderlist.com/customer/en/portal/articles/2364564-can-i-backup-export-my-data-)
 
-Then, move the backup file to the wunder2reminders directory.
+Then, move the backup file to the wunder2reminders-master directory.
 
 ### 2. Run wunder2reminders.
 
 Execute the following commands. Pass the Wunderlist backup file path as the argument.
 
 ```
-$ cd /path/to/wunder2reminders
+$ cd /path/to/wunder2reminders-master
 $ ./wunder2reminders.rb ./wunderlist-********-**-**-**.json
 Daily
 Family
