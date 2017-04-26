@@ -15,7 +15,7 @@ Wunder2Reminders is a tool to transfer task data from Wunderlist into iCloud Rem
 
 ![](images/download.png)
 
-1. Unzip the zip file.
+2. Unzip the zip file.
 
 
 ## Usage
