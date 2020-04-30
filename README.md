@@ -6,7 +6,7 @@ Wunder2Reminders is a tool to transfer task data from Wunderlist into iCloud Rem
 ## Environments for operation check
 
 - macOS Sierra 10.12.4
-- Ruby 2.3.1
+- Ruby 2.3.1 or Python3
 
 
 ## Installation
@@ -28,7 +28,30 @@ Back up your Wunderlist task data. You can export the backup file from 'Account 
 
 Then, move the backup file to the wunder2reminders-master directory.
 
-### 2. Run wunder2reminders.
+### 2. Run wunder2reminders
+
+#### 1. With Python
+
+```
+$ cd path/to/wunder2reminders-master
+$ pip install -r requirements.txt
+$ python wunder2reminders.python path/to/Tasks.json
+```
+
+```
+Usage:
+  wunder2reminders.py FILE [options]
+
+Options:
+  --encoding=<codec>    [default: utf-8-sig].
+  --output-path=<path>  [default: reminders].
+  -h --help             Show this screen.
+  --version             Show version.
+```
+
+This creates one `*.ics` file for each list in the `output_path` directory. 
+
+#### 2. With Ruby
 
 Execute the following commands. Pass the Wunderlist backup file path as the argument.
 
@@ -41,7 +64,7 @@ inbox
 ...
 ```
 
-Each list name shows up. You can use this list names in the next 3rd step to create lists in Reminders. 
+Each list name shows up. You can use this list names in the next 3rd step to create lists in Reminders.
 
 In addition, task data files `reminders/*.ics` for iCloud Reminders are generated in the 'reminders' directory. Use these files to import task data into Reminders.
 
@@ -82,12 +105,11 @@ Repeat these steps to import all `reminders/*.ics` files.
 1. Push to the branch (git push origin my-new-feature)
 1. Create a new Pull Request
 
-
 ## Licence
 
 MIT License
 
-
 ## Author
 
-[Takafumi Yamano](https://github.com/takafumir)
+* [Takafumi Yamano](https://github.com/takafumir)
+* [Christian Lölkes](https://github.com/loelkes)
